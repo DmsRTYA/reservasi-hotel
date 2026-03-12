@@ -41,7 +41,6 @@ export default function RegisterPage() {
 
       <div className="w-full max-w-md relative z-10 animate-slide-up">
         <div className="text-center mb-8">
-          <div className="text-5xl mb-4">🏨</div>
           <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: 22, fontWeight: 700, color: '#C9A84C', letterSpacing: 2 }}>
             THE GRAND MUGARSARI
           </h1>

@@ -45,7 +45,6 @@ export default function LoginPage() {
       <div className="w-full max-w-md relative z-10 animate-slide-up">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="text-5xl mb-4">🏨</div>
           <div className="inline-flex items-center gap-2 mb-2">
             <span style={{ color: '#C9A84C', fontSize: 11, letterSpacing: 4, textTransform: 'uppercase' }}>✦</span>
             <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: 26, fontWeight: 700, color: '#C9A84C', letterSpacing: 2 }}>
