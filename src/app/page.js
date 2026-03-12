@@ -7,7 +7,6 @@ export default function Root() {
   return (
     <div className="min-h-screen flex items-center justify-center" style={{ background: '#0D1B2A' }}>
       <div className="text-center">
-        <div className="text-5xl mb-3">🏨</div>
         <p style={{ color: '#C9A84C', fontFamily: 'Playfair Display, serif', fontSize: 18, fontWeight: 700 }}>The Grand Mugarsari</p>
         <p style={{ color: '#B0A898', fontSize: 13, marginTop: 4 }}>Memuat...</p>
       </div>
