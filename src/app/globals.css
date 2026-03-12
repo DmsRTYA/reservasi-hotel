@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Lato', system-ui, sans-serif;
+  background-color: #0D1B2A;
+  color: #F5F0E8;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.03) 0%, transparent 50%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0D1B2A; }
+::-webkit-scrollbar-thumb { background: #C9A84C; border-radius: 10px; }
+
+/* Gold divider */
+.gold-divider {
+  width: 60px; height: 2px;
+  background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+  margin: 16px auto;
+}
+
+/* Hotel input style */
+.hotel-input {
+  width: 100%;
+  background: rgba(30,48,80,0.6);
+  border: 1px solid rgba(201,168,76,0.2);
+  color: #F5F0E8;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.2s, background 0.2s;
+  outline: none;
+}
+.hotel-input:focus { border-color: rgba(201,168,76,0.6); background: rgba(30,48,80,0.85); }
+.hotel-input::placeholder { color: #8899AA; }
+.hotel-input option { background: #162233; color: #F5F0E8; }
+
+/* Date input fix */
+input[type='date']::-webkit-calendar-picker-indicator { filter: invert(0.8) sepia(1) saturate(2) hue-rotate(5deg); }
+
+/* Gold button */
+.btn-gold {
+  background: linear-gradient(135deg, #C9A84C, #a8893d);
+  color: #0D1B2A;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.25s;
+  border: none;
+  cursor: pointer;
+}
+.btn-gold:hover { background: linear-gradient(135deg, #E8C97A, #C9A84C); box-shadow: 0 4px 20px rgba(201,168,76,0.4); }
+.btn-gold:disabled { opacity: 0.55; cursor: not-allowed; }
+
+/* Pattern bg */
+.pattern-bg::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23C9A84C' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
